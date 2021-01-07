@@ -5,7 +5,7 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1280,
+    width: 1800,
     height: 1000,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
@@ -13,12 +13,12 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('web_test.html')
+  mainWindow.loadFile('sample.html')
   mainWindow.setMenuBarVisibility(false)
-  mainWindow.setResizable(false)
+  // mainWindow.setResizable(false)
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
