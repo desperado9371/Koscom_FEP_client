@@ -14,8 +14,8 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('sample.html')
-  mainWindow.setMenuBarVisibility(false)
-  // mainWindow.setResizable(false)
+  //mainWindow.setMenuBarVisibility(false)
+  mainWindow.setResizable(false)
 
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
