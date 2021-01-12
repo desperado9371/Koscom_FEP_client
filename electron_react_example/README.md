@@ -1,10 +1,10 @@
 ## 간단 실행법
 
-- ** npm install yarn /* yarn이 없다면 미리 설치 */
+- npm install yarn /* yarn이 없다면 미리 설치 */
 
-- **npm install  /* 필요한 모듈 설치 명령어 */
+- npm install  /* 필요한 모듈 설치 명령어 */
 
-- **npm run start /* 개발모드로 app 실행 */
+- npm run start /* 개발모드로 app 실행 */
 
 
 <img src=".erb/img/erb-banner.png" width="100%" />
