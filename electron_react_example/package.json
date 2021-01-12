@@ -254,12 +254,15 @@
     "electron-updater": "^4.3.4",
     "history": "^5.0.0",
     "moment": "^2.29.1",
+    "namor": "^2.0.2",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
+    "react-table": "^7.6.3",
     "regenerator-runtime": "^0.13.5",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "styled-components": "^5.2.1"
   },
   "devEngines": {
     "node": ">=10.x",

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Test2 from './Test2';
 import Timer from './Timer';
 import Say from './Say';
+import Table from './Table_example';
 
 const Hello = () => {
   return (
@@ -17,6 +18,7 @@ const Hello = () => {
         }}
       />
       <Test2 />
+      <Table />
     </>
   );
 };

@@ -7,7 +7,7 @@
 body {
     position: relative;
     color: black;
-    height: 100vh;
+    height: 100%;
     /* background: linear-gradient( 200.96deg, #fedc2a -29.09%, #dd5789 51.77%, #7a2c9e 129.35%); */
     font-family: 'Noto Sans JP', sans-serif;
     overflow-y: hidden;
@@ -65,4 +65,22 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+}
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    /*inline-block의 장점은 폰트의 성질도 포함되고 있어서 text-align으로 정렬을 쉽게 할수가 있다.*/
+    font-size: 0;
+    /*양 옆쪽, 밑에 4px정도 여백을 없에주는 방법 하지만 크로스브라우징 호환성헤서는 문제가 있다.*/
+}
+
+.grid_item {
+    width: 500px;
+    height: 100%;
+    display: inline-block;
+    /*이부분에 성질을 inline-block로 바꿔줘서 가로배치를 해줬다.*/
+    vertical-align: top;
+    /*밑에 4px 여백을 없에는것*/
 }

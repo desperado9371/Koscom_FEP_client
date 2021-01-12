@@ -77,9 +77,14 @@ const Test2 = () => {
   return (
     <Fragment>
       <h2> Random chart</h2>
-      <Line data={datas} options={options} />
-      <Bar data={datas} options={options} />
-      <Doughnut data={datas} />
+      <div class="grid">
+        <div class="grid_item">
+          <Line data={datas} options={options} />
+        </div>
+        <div class="grid_item">
+          <Bar data={datas} options={options} />
+        </div>
+      </div>
     </Fragment>
   );
 };
