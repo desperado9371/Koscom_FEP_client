@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Test2 from './Test2';
 import Timer from './Timer';
 import Say from './Say';
 import Table from './Table_example';
+import Dashboard_example from './Dashboard_example';
+import Control_example from './Control_example';
+import Nav_example from './Nav_example';
 
 const Hello = () => {
   return (
     <>
+      <Nav_example />
       <h1>Koscom 고속 FEP 모니터링 클라이언트</h1>
       <Say />
       <Timer
@@ -26,7 +30,10 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Hello} />
+        <Route exact path="/dashboard" component={Dashboard_example} />
+        <Route exact path="/control" component={Control_example} />
+        <Route exact path="/test" component={Hello} />
+        <Route exact path="/" component={Dashboard_example} />
       </Switch>
     </Router>
   );
