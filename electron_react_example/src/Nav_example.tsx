@@ -1,9 +1,20 @@
 import React, { Fragment } from 'react';
 import { Card, Button, Nav } from 'tabler-react';
+import { Row, Col, Image } from 'react-bootstrap';
 
 const Nav_example = () => {
   return (
     <Fragment>
+      <Nav className="brand">
+        <Row>
+          <Col xs={2} md={2}>
+            <Image src="./img/koscom_ci.jpg" />
+          </Col>
+          <Col xs={10} md={6}>
+            <h1>고속 FEP 모니터링 클라이언트</h1>
+          </Col>
+        </Row>
+      </Nav>
       <Nav className="navbar">
         <Nav.Item hasSubNav value="Page One" icon="globe">
           <Nav.SubItem value="Sub Item 1" />

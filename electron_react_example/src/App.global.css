@@ -9,13 +9,17 @@
 body {
     position: relative;
     color: black;
-    /* background: linear-gradient( 200.96deg, #db8d10 -29.09%, #f0c5a8 51.77%, #ece9ee 129.35%); */
+    /* background: linear-gradient( 200.96deg, #e27208 -29.09%, #e2e7e5 51.77%, #7e03cf 129.35%); */
     font-family: 'Noto Sans JP', sans-serif;
     overflow-y: hidden;
     display: flex;
     justify-content: top;
     align-items: top;
     overflow: scroll;
+}
+
+h1 {
+    color: black;
 }
 
 h2 {
