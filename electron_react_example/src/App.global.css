@@ -3,11 +3,13 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
+@import '~tabler-react/dist/Tabler.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 body {
     position: relative;
     color: black;
-    background: linear-gradient( 200.96deg, #db8d10 -29.09%, #f0c5a8 51.77%, #ece9ee 129.35%);
+    /* background: linear-gradient( 200.96deg, #db8d10 -29.09%, #f0c5a8 51.77%, #ece9ee 129.35%); */
     font-family: 'Noto Sans JP', sans-serif;
     overflow-y: hidden;
     display: flex;

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import '../node_modules/tabler-react/dist/Tabler.css';
 import { Card, Button, Nav, Dropdown } from 'tabler-react';
 import Nav_example from './Nav_example';
 

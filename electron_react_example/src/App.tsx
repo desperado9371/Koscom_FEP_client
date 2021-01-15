@@ -7,12 +7,14 @@ import Table from './Table_example';
 import Dashboard_example from './Dashboard_example';
 import Control_example from './Control_example';
 import Nav_example from './Nav_example';
+import Bootstrap_test from './Bootstrap_test';
 
 const Hello = () => {
   return (
     <>
       <Nav_example />
       <h1>Koscom 고속 FEP 모니터링 클라이언트</h1>
+      <Bootstrap_test />
       <Say />
       <Timer
         expiredTime={'2021-03-12T10:53:00+09:00'}
