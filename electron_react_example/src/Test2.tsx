@@ -77,13 +77,11 @@ const Test2 = () => {
   return (
     <Fragment>
       <h2> Random chart</h2>
-      <div className="grid">
-        <div className="grid_item">
+      <div className="chartdiv">
+        {/* <div className="grid_item w-50">
           <Line data={datas} options={options} />
-        </div>
-        <div className="grid_item">
-          <Bar data={datas} options={options} />
-        </div>
+        </div> */}
+        <Bar data={datas} options={options} />
       </div>
     </Fragment>
   );

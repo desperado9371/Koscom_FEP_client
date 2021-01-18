@@ -8,6 +8,7 @@ import Dashboard_example from './Dashboard_example';
 import Control_example from './Control_example';
 import Nav_example from './Nav_example';
 import Bootstrap_test from './Bootstrap_test';
+import Home from './HomePage';
 
 const Hello = () => {
   return (
@@ -31,6 +32,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/home" component={Home} />
         <Route exact path="/dashboard" component={Dashboard_example} />
         <Route exact path="/control" component={Control_example} />
         <Route exact path="/test" component={Hello} />

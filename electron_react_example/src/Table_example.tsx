@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useTable } from 'react-table';
 
@@ -25,7 +25,7 @@ const Styles = styled.div`
       padding: 0.5rem;
       border-bottom: 1px solid black;
       border-right: 1px solid black;
-
+      font-size: 1vw;
       :last-child {
         border-right: 0;
       }
@@ -78,19 +78,6 @@ function Table_example() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Name',
-        columns: [
-          {
-            Header: 'First Name',
-            accessor: 'firstName',
-          },
-          {
-            Header: 'Last Name',
-            accessor: 'lastName',
-          },
-        ],
-      },
-      {
         Header: 'Info',
         columns: [
           {
@@ -115,11 +102,20 @@ function Table_example() {
     []
   );
 
-  const data = React.useMemo(() => makeData(20), []);
+  const [data2, setDatas2] = useState(makeData(4));
 
+  useEffect(() => {
+    setTimeout(() => {
+      let temp = makeData(4);
+      setDatas2(temp);
+    }, 1000);
+  });
+
+  const data = React.useMemo(() => makeData(4), []);
+  // console.log(data);
   return (
     <Styles>
-      <Table columns={columns} data={data} />
+      <Table columns={columns} data={data2} />
     </Styles>
   );
 }

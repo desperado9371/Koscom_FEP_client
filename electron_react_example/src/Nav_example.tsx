@@ -15,7 +15,7 @@ const Nav_example = () => {
           </Col>
         </Row>
       </Nav>
-      <Nav className="navbar">
+      <Nav className="navmain navbar">
         <Nav.Item hasSubNav value="Page One" icon="globe">
           <Nav.SubItem value="Sub Item 1" />
           <Nav.SubItem>Sub Item 2</Nav.SubItem>
@@ -24,8 +24,8 @@ const Nav_example = () => {
         <Nav.Item to="#/dashboard">프로세스 모니터링 대시보드</Nav.Item>
         <Nav.Item to="#/control">프로세스 제어</Nav.Item>
         <Nav.Item to="#/test">차트 및 기타기능 테스트</Nav.Item>
-        <Nav.Item active icon="user">
-          Page Four
+        <Nav.Item to="#/home" icon="user">
+          샘플 디자인
         </Nav.Item>
       </Nav>
     </Fragment>
