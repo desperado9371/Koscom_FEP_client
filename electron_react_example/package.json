@@ -1,6 +1,6 @@
 {
     "name": "electron-react-boilerplate",
-    "productName": "ElectronReact",
+    "productName": "Koscom FEP Monitoring Client",
     "description": "Electron application boilerplate based on React, React Router, Webpack, React Fast Refresh for rapid application development",
     "scripts": {
         "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
@@ -30,7 +30,7 @@
         ]
     },
     "build": {
-        "productName": "ElectronReact",
+        "productName": "Koscom FEP Monitoring Client",
         "appId": "org.erb.ElectronReact",
         "files": [
             "dist/",
@@ -39,7 +39,8 @@
             "main.prod.js",
             "main.prod.js.map",
             "package.json",
-            "img/"
+            "img/",
+            "node_modules/tabler-react/dist/fonts/feather/feather-webfont.svg"
         ],
         "afterSign": ".erb/scripts/Notarize.js",
         "mac": {
@@ -265,6 +266,7 @@
         "react-chartjs-2": "^2.11.1",
         "react-dom": "^17.0.1",
         "react-router-dom": "^5.2.0",
+        "react-syntax-highlighter": "^15.4.3",
         "react-table": "^7.6.3",
         "regenerator-runtime": "^0.13.5",
         "source-map-support": "^0.5.19",

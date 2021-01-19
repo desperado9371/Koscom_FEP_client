@@ -3,6 +3,15 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
+@font-face {
+    font-family: "feather";
+    src: url("~tabler-react/dist/fonts/feather/feather-webfont.eot?t=1501841394106");
+    /* IE9*/
+    src: url("~tabler-react/dist/fonts/feather/feather-webfont.eot?t=1501841394106#iefix") format("embedded-opentype"), url("~tabler-react/dist/fonts/feather/feather-webfont.woff?t=1501841394106") format("woff"), url("~tabler-react/dist/fonts/feather/feather-webfont.ttf?t=1501841394106") format("truetype"), url("~tabler-react/dist/fonts/feather/feather-webfont.svg?t=1501841394106#feather") format("svg");
+    /* iOS 4.1- */
+}
+
+;
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~tabler-react/dist/Tabler.css';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -118,4 +127,9 @@ a:hover {
 
 .chartdiv {
     height: 100%;
+}
+
+.custom-control-label {
+    box-sizing: border-box;
+    vertical-align: middle;
 }

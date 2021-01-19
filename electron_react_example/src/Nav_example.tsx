@@ -11,7 +11,7 @@ const Nav_example = () => {
             <Image src="./img/koscom_ci.jpg" />
           </Col>
           <Col xs={10} md={6}>
-            <h1>고속 FEP 모니터링 클라이언트</h1>
+            <h1>고속 FEP 모니터링 클라이언트 </h1>
           </Col>
         </Row>
       </Nav>

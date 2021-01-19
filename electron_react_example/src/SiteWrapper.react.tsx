@@ -15,18 +15,18 @@ import {
 const navBarItems: Array<navItem> = [
   {
     value: 'Home',
-    to: '#',
-    icon: 'home',
+    to: '/home',
+    // icon: 'home',
     LinkComponent: withRouter(NavLink),
     useExact: true,
   },
   {
-    value: 'Interface',
-    icon: 'box',
+    value: 'Process Control',
+    // icon: 'box',
     subItems: [
       {
-        value: 'Cards Design',
-        to: '/cards',
+        value: 'procCtrlTest1',
+        to: '/procCtrlTest1',
         LinkComponent: withRouter(NavLink),
       },
       { value: 'Charts', to: '/charts', LinkComponent: withRouter(NavLink) },
@@ -39,7 +39,7 @@ const navBarItems: Array<navItem> = [
   },
   {
     value: 'Components',
-    icon: 'calendar',
+    // icon: 'calendar',
     subItems: [
       { value: 'Maps', to: '/maps', LinkComponent: withRouter(NavLink) },
       { value: 'Icons', to: '/icons', LinkComponent: withRouter(NavLink) },
@@ -49,7 +49,7 @@ const navBarItems: Array<navItem> = [
   },
   {
     value: 'Pages',
-    icon: 'file',
+    // icon: 'file',
     subItems: [
       { value: 'Profile', to: '/profile', LinkComponent: withRouter(NavLink) },
       { value: 'Login', to: '/login', LinkComponent: withRouter(NavLink) },
@@ -81,22 +81,14 @@ const navBarItems: Array<navItem> = [
   {
     value: 'Forms',
     to: '/form-elements',
-    icon: 'check-square',
+    // icon: 'check-square',
     LinkComponent: withRouter(NavLink),
   },
   {
     value: 'Gallery',
     to: '/gallery',
-    icon: 'image',
+    // icon: 'image',
     LinkComponent: withRouter(NavLink),
-  },
-  {
-    icon: 'file-text',
-    value: 'Documentation',
-    to:
-      process.env.NODE_ENV === 'production'
-        ? 'https://tabler.github.io/tabler-react/documentation'
-        : '/documentation',
   },
 ];
 
@@ -109,7 +101,7 @@ class SiteWrapper extends React.Component<Props, State> {
         headerProps={{
           href: '#/',
           alt: 'FEP Monitoring Client',
-          imageURL: './img/koscom_ci.jpg',
+          imageURL: './img/koscom_ci_big.jpg',
           navItems: <h3>FEP Moniotring Client</h3>,
         }}
         navProps={{ itemsObjects: navBarItems }}

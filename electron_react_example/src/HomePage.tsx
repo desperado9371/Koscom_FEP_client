@@ -73,7 +73,7 @@ function Home() {
             <Test2 />
           </Grid.Col>
 
-          <Grid.Col md={6}>
+          <Grid.Col lg={6}>
             <Alert type="primary">
               <Alert.Link
                 href={
@@ -272,13 +272,7 @@ function Home() {
                 </Table.Header>
                 <Table.Body>
                   <Table.Row>
-                    <Table.Col alignContent="center">
-                      <Avatar
-                        imageURL="demo/faces/female/26.jpg"
-                        className="d-block"
-                        status="green"
-                      />
-                    </Table.Col>
+                    <Table.Col alignContent="center"></Table.Col>
                     <Table.Col>
                       <div>Elizabeth Martin</div>
                       <Text size="sm" muted>
@@ -379,13 +373,7 @@ function Home() {
                 <ul className="list-unstyled list-separated">
                   <li className="list-separated-item">
                     <Grid.Row className="align-items-center">
-                      <Grid.Col auto>
-                        <Avatar
-                          size="md"
-                          className="d-block"
-                          imageURL="demo/faces/female/12.jpg"
-                        />
-                      </Grid.Col>
+                      <Grid.Col auto></Grid.Col>
                       <Grid.Col>
                         <div>
                           <a className="text-inherit" href="#">
