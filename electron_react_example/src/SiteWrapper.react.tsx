@@ -102,7 +102,7 @@ class SiteWrapper extends React.Component<Props, State> {
           href: '#/',
           alt: 'FEP Monitoring Client',
           imageURL: './img/koscom_ci_big.jpg',
-          navItems: <h3>FEP Moniotring Client</h3>,
+          navItems: <h3>FEP Monitoring Client</h3>,
         }}
         navProps={{ itemsObjects: navBarItems }}
         routerContextComponentType={withRouter(RouterContextProvider)}

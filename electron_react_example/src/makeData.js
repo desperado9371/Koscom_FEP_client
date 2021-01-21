@@ -11,17 +11,20 @@ const range = (len) => {
 const newPerson = () => {
   const statusChance = Math.random();
   return {
-    firstName: namor.generate({ words: 1, numbers: 0 }),
-    lastName: namor.generate({ words: 1, numbers: 0 }),
-    age: Math.floor(Math.random() * 30),
-    visits: Math.floor(Math.random() * 100),
-    progress: Math.floor(Math.random() * 100),
-    status:
-      statusChance > 0.66
-        ? 'relationship'
-        : statusChance > 0.33
-        ? 'complicated'
-        : 'single',
+    ProcNum: Math.floor(Math.random() * 1000),
+    ProcRunState: Math.floor(Math.random() * 10),
+    ClientCount: Math.floor(Math.random() * 10),
+    LinkStatus: Math.floor(Math.random() * 10),
+    ServerType: Math.floor(Math.random() * 10),
+    T: Math.floor(Math.random() * 10),
+    F: Math.floor(Math.random() * 10),
+    SeqNum: Math.floor(Math.random() * 10),
+    StoreQsent: Math.floor(Math.random() * 10),
+    StoreQwillsend: Math.floor(Math.random() * 10),
+    MemQsent: Math.floor(Math.random() * 10),
+    MemQwillsend: Math.floor(Math.random() * 10),
+    ResponseTime: Math.floor(Math.random() * 1000000),
+    LogLevels: Math.floor(Math.random() * 10),
   };
 };
 

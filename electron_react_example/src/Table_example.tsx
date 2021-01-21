@@ -19,7 +19,18 @@ const Styles = styled.div`
       }
     }
 
-    th,
+    th {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      font-size: 1vw;
+      :last-child {
+        border-right: 0;
+      }
+      background-color: #cccccc;
+    }
+
     td {
       margin: 0;
       padding: 0.5rem;
@@ -78,25 +89,60 @@ function Table_example() {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'Info',
-        columns: [
-          {
-            Header: 'Age',
-            accessor: 'age',
-          },
-          {
-            Header: 'Visits',
-            accessor: 'visits',
-          },
-          {
-            Header: 'Status',
-            accessor: 'status',
-          },
-          {
-            Header: 'Profile Progress',
-            accessor: 'progress',
-          },
-        ],
+        Header: 'No',
+        accessor: 'ProcNum',
+      },
+      {
+        Header: 'P',
+        accessor: 'ProcRunState',
+      },
+      {
+        Header: 'C',
+        accessor: 'ClientCount',
+      },
+      {
+        Header: 'N',
+        accessor: 'LinkStatus',
+      },
+      {
+        Header: 'Li',
+        accessor: 'ServerType',
+      },
+      {
+        Header: 'T',
+        accessor: 'T',
+      },
+      {
+        Header: 'F',
+        accessor: 'F',
+      },
+      {
+        Header: 'IntCnt',
+        accessor: 'SeqNum',
+      },
+      {
+        Header: 'SSndCnt',
+        accessor: 'StoreQsent',
+      },
+      {
+        Header: 'SWrtCnt',
+        accessor: 'StoreQwillsend',
+      },
+      {
+        Header: 'SMSndC',
+        accessor: 'MemQsent',
+      },
+      {
+        Header: 'SMWrtC',
+        accessor: 'MemQwillsend',
+      },
+      {
+        Header: 'Time',
+        accessor: 'ResponseTime',
+      },
+      {
+        Header: 'L',
+        accessor: 'LogLevels',
       },
     ],
     []

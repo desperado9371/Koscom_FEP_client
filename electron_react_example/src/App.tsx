@@ -10,11 +10,14 @@ import Nav_example from './Nav_example';
 import Bootstrap_test from './Bootstrap_test';
 import Home from './HomePage';
 import ProcCtrlTest1 from './ProcCtrl_test1';
+import Table_test2 from './Table_Exam2';
+import UdpTest from './UdpTest';
 
 const Hello = () => {
   return (
     <>
       <Nav_example />
+      <UdpTest />
       <Bootstrap_test />
       <Say />
       <Timer
@@ -25,6 +28,7 @@ const Hello = () => {
       />
       <Test2 />
       <Table />
+      <Table_test2 />
     </>
   );
 };

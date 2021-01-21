@@ -25,6 +25,7 @@ import C3Chart from 'react-c3js';
 
 import SiteWrapper from './SiteWrapper.react';
 import Test2 from './Test2';
+import Table_example from './Table_example';
 
 function Home() {
   return (
@@ -71,6 +72,7 @@ function Home() {
               </Card.Header>
             </Card>
             <Test2 />
+            <Table_example />
           </Grid.Col>
 
           <Grid.Col lg={6}>
