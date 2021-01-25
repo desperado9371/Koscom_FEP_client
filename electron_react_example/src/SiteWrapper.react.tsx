@@ -14,81 +14,31 @@ import {
 
 const navBarItems: Array<navItem> = [
   {
-    value: 'Home',
-    to: '/home',
+    value: '주문 및 서버 현황',
+    to: '/',
     // icon: 'home',
     LinkComponent: withRouter(NavLink),
     useExact: true,
   },
   {
-    value: 'Process Control',
+    value: '주문 통계',
     // icon: 'box',
-    subItems: [
-      {
-        value: 'procCtrlTest1',
-        to: '/procCtrlTest1',
-        LinkComponent: withRouter(NavLink),
-      },
-      { value: 'Charts', to: '/charts', LinkComponent: withRouter(NavLink) },
-      {
-        value: 'Pricing Cards',
-        to: '/pricing-cards',
-        LinkComponent: withRouter(NavLink),
-      },
-    ],
-  },
-  {
-    value: 'Components',
-    // icon: 'calendar',
-    subItems: [
-      { value: 'Maps', to: '/maps', LinkComponent: withRouter(NavLink) },
-      { value: 'Icons', to: '/icons', LinkComponent: withRouter(NavLink) },
-      { value: 'Store', to: '/store', LinkComponent: withRouter(NavLink) },
-      { value: 'Blog', to: '/blog', LinkComponent: withRouter(NavLink) },
-    ],
-  },
-  {
-    value: 'Pages',
-    // icon: 'file',
-    subItems: [
-      { value: 'Profile', to: '/profile', LinkComponent: withRouter(NavLink) },
-      { value: 'Login', to: '/login', LinkComponent: withRouter(NavLink) },
-      {
-        value: 'Register',
-        to: '/register',
-        LinkComponent: withRouter(NavLink),
-      },
-      {
-        value: 'Forgot password',
-        to: '/forgot-password',
-        LinkComponent: withRouter(NavLink),
-      },
-      { value: '400 error', to: '/400', LinkComponent: withRouter(NavLink) },
-      { value: '401 error', to: '/401', LinkComponent: withRouter(NavLink) },
-      { value: '403 error', to: '/403', LinkComponent: withRouter(NavLink) },
-      { value: '404 error', to: '/404', LinkComponent: withRouter(NavLink) },
-      { value: '500 error', to: '/500', LinkComponent: withRouter(NavLink) },
-      { value: '503 error', to: '/503', LinkComponent: withRouter(NavLink) },
-      { value: 'Email', to: '/email', LinkComponent: withRouter(NavLink) },
-      {
-        value: 'Empty page',
-        to: '/empty-page',
-        LinkComponent: withRouter(NavLink),
-      },
-      { value: 'RTL', to: '/rtl', LinkComponent: withRouter(NavLink) },
-    ],
-  },
-  {
-    value: 'Forms',
-    to: '/form-elements',
-    // icon: 'check-square',
+    to: '/statistic',
     LinkComponent: withRouter(NavLink),
+    useExact: true,
   },
   {
-    value: 'Gallery',
-    to: '/gallery',
-    // icon: 'image',
+    value: '주문처리 조회',
+    // icon: 'box',
+    to: '/search',
     LinkComponent: withRouter(NavLink),
+    useExact: true,
+  },
+  {
+    value: '통합 모니터링',
+    to: '/monitoring',
+    LinkComponent: withRouter(NavLink),
+    useExact: true,
   },
 ];
 
@@ -102,7 +52,7 @@ class SiteWrapper extends React.Component<Props, State> {
           href: '#/',
           alt: 'FEP Monitoring Client',
           imageURL: './img/koscom_ci_big.jpg',
-          navItems: <h3>FEP Monitoring Client</h3>,
+          navItems: <h3>K-Link</h3>,
         }}
         navProps={{ itemsObjects: navBarItems }}
         routerContextComponentType={withRouter(RouterContextProvider)}
@@ -117,20 +67,11 @@ class SiteWrapper extends React.Component<Props, State> {
             <a href="#">Seventh Link</a>,
             <a href="#">Eigth Link</a>,
           ],
-          note:
-            'Premium and Open Source dashboard template with responsive and high quality UI. For Free!',
+          note: '코스콤 고속 FEP 모니터링 클라이언트',
           copyright: (
             <React.Fragment>
-              Copyright © 2019
-              <a href="."> Tabler-react</a>. Theme by
-              <a
-                href="https://codecalm.net"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {' '}
-                codecalm.net
-              </a>{' '}
+              Copyright © 2021
+              <a href="."> K-LINK. </a>
               All rights reserved.
             </React.Fragment>
           ),

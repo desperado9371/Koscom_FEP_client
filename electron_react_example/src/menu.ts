@@ -32,8 +32,9 @@ export default class MenuBuilder {
         : this.buildDefaultTemplate();
 
     const menu = Menu.buildFromTemplate(template);
+    //메뉴 비활성화
     Menu.setApplicationMenu(menu);
-
+    // Menu.setApplicationMenu(null);
     return menu;
   }
 
