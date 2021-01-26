@@ -24,7 +24,7 @@ const Styles = styled.div`
       padding: 0.5rem;
       border-bottom: 1px solid black;
       border-right: 1px solid black;
-      font-size: 1vw;
+      font-size: 0.8vw;
       :last-child {
         border-right: 0;
       }
@@ -36,7 +36,7 @@ const Styles = styled.div`
       padding: 0.5rem;
       border-bottom: 1px solid black;
       border-right: 1px solid black;
-      font-size: 1vw;
+      font-size: 0.8vw;
       :last-child {
         border-right: 0;
       }

@@ -17,7 +17,7 @@ const Timer = () => {
 
   return (
     <div>
-      <div className="timer">{date.format('yyyy/M/D HH:mm:ss')}</div>
+      <div className="timer">{date.format('yyyy/MM/DD HH:mm:ss')}</div>
     </div>
   );
 };

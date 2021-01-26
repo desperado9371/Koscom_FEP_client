@@ -9,7 +9,7 @@ const data = {
     {
       type: 'line',
       label: '주문 건수',
-      borderColor: 'orange',
+      borderColor: '#58FFDD',
       borderWidth: 3,
       fill: false,
       data: [rand(), rand(), rand(), rand(), rand(), rand(), rand() * rand()],
@@ -17,25 +17,17 @@ const data = {
     {
       type: 'bar',
       label: '평균 처리',
-      backgroundColor: 'rgb(255, 99, 132)',
+      backgroundColor: '#7446E8',
       data: [rand(), rand(), rand(), rand(), rand(), rand(), rand() * rand()],
-      borderColor: 'white',
+      borderColor: '#7446E8',
       borderWidth: 2,
-    },
-    {
-      type: 'bar',
-      label: 'Dataset 3',
-      backgroundColor: 'rgb(75, 192, 192)',
-      data: [rand(), rand(), rand(), rand(), rand(), rand(), rand() * rand()],
     },
   ],
 };
 const MixChart = () => {
   return (
     <>
-      <div className="mixchartdiv">
-        <Bar data={data} />
-      </div>
+      <Bar data={data} />
     </>
   );
 };

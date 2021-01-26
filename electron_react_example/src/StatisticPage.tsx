@@ -28,7 +28,9 @@ function Statistic() {
     <SiteWrapper>
       <Page.Content title="주문 통계">
         <Grid.Row>
-          <MixChart />
+          <div className="mixchartdiv">
+            <MixChart />
+          </div>
         </Grid.Row>
       </Page.Content>
     </SiteWrapper>
