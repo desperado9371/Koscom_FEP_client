@@ -9,7 +9,7 @@ const Mini_Table = () => {
       hover
       size="sm"
       variant="dark"
-      style={{ fontSize: '12px' }}
+      style={{ fontSize: '0.8vw' }}
     >
       <thead>
         <tr>

@@ -15,7 +15,7 @@ import {
 const navBarItems: Array<navItem> = [
   {
     value: '주문 및 서버 현황',
-    to: '/',
+    to: '/Home',
     // icon: 'home',
     LinkComponent: withRouter(NavLink),
     useExact: true,
@@ -49,7 +49,7 @@ class SiteWrapper extends React.Component<Props, State> {
     return (
       <Site.Wrapper
         headerProps={{
-          href: '#/',
+          href: '#/Home',
           alt: 'FEP Monitoring Client',
           imageURL: './img/koscom_ci_big.jpg',
           navItems: <h3>K-Link</h3>,
