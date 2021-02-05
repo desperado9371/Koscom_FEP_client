@@ -5,6 +5,7 @@ import Statistic from './StatisticPage';
 import Search from './SearchPage';
 import Monitoring from './MonitoringPage';
 import Login from './Login';
+import UdpTest from './UdpTest';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route exact path="/statistic" component={Statistic} />
         <Route exact path="/search" component={Search} />
         <Route exact path="/monitoring" component={Monitoring} />
+        <Route exact path="/udptest" component={UdpTest} />
       </Switch>
     </Router>
   );

@@ -40,6 +40,12 @@ const navBarItems: Array<navItem> = [
     LinkComponent: withRouter(NavLink),
     useExact: true,
   },
+  {
+    value: '(임시) TCP/UDP 통신 테스트',
+    to: '/udptest',
+    LinkComponent: withRouter(NavLink),
+    useExact: true,
+  },
 ];
 
 class SiteWrapper extends React.Component<Props, State> {

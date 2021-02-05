@@ -128,7 +128,7 @@ const Monitoring = () => {
       >
         <Col sm={6}>
           주문 통계
-          <div className="miniChart">
+          <div className="miniChart" style={{ height: '100%' }}>
             <MixChart />
           </div>
         </Col>

@@ -263,6 +263,7 @@
         "moment": "^2.29.1",
         "namor": "^2.0.2",
         "react": "^17.0.1",
+        "react-animation": "^1.2.2",
         "react-bootstrap": "^1.4.3",
         "react-bootstrap-date-picker": "^5.1.0",
         "react-c3js": "^0.1.20",
