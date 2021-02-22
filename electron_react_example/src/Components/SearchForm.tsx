@@ -1,24 +1,14 @@
 import React from 'react';
-import {
-  Row,
-  Col,
-  Button,
-  InputGroup,
-  Date,
-  Form,
-  Badge,
-  Table,
-} from 'react-bootstrap';
-import DatePicker from 'react-bootstrap-date-picker';
+import { Row, Col, Button, Form, Table } from 'react-bootstrap';
 import moment from 'moment';
 import 'moment/locale/ko';
 
 const SearchForm = () => {
   const today = moment();
   return (
-    <Form>
+    <Form style={{ paddingRight: '1vw' }}>
       <Form.Group controlId="ctrl1">
-        <Row>
+        <Row style={{ paddingRight: '1vw' }}>
           <Col className="align-self-center h-100" sm={3}>
             <Form.Control
               type="date"
@@ -33,7 +23,7 @@ const SearchForm = () => {
               className="mb-3"
               style={{ fontSize: '15px' }}
             >
-              <Form.Group>
+              {/* <Form.Group>
                 <Form.Check
                   inline
                   label="NDFO"
@@ -48,7 +38,7 @@ const SearchForm = () => {
                   type="radio"
                   id="radio2"
                 />
-              </Form.Group>
+              </Form.Group> */}
             </div>
           </Col>
           <Col className="align-self-center h-100" sm={3}>
@@ -69,7 +59,7 @@ const SearchForm = () => {
           hover
           size="sm"
           variant="dark"
-          style={{ fontSize: '0.9vw' }}
+          style={{ fontSize: '0.7vw' }}
         >
           <thead>
             <tr>
@@ -97,21 +87,23 @@ const SearchForm = () => {
           </tbody>
         </Table>
       </Row>
-      <Row className="w-100" style={{ fontSize: '1vw' }}>
+      <Row className="w-100" style={{ fontSize: '0.7vw' }}>
         <Col
           className="border-right border-top border-light text-center"
           sm={2}
-          style={{ fontSize: '1.1vw' }}
+          style={{ fontSize: '0.8vw' }}
         >
           OMS
         </Col>
         <Col
           className="border-top border-light text-center"
           sm={8}
-          style={{ fontSize: '1.1vw' }}
+          style={{ fontSize: '0.8vw' }}
         >
           K-LINK 주문 처리 시간 <br />
-          {'<--------------------------------------------------------------->'}
+          {
+            '<---------------------------------------------------------------------------------->'
+          }
           <br />
           20ms
           <br />
@@ -119,14 +111,14 @@ const SearchForm = () => {
         <Col
           className="border-left border-top border-light text-center"
           sm={2}
-          style={{ fontSize: '1.1vw' }}
+          style={{ fontSize: '0.8vw' }}
         >
           KRX
         </Col>
       </Row>
-      <Row className="w-100" style={{ fontSize: '1vw' }}>
+      <Row className="w-100" style={{ fontSize: '0.8vw' }}>
         <Col className="border-right border-light text-center" sm={2}>
-          10ms<br></br>------------{'->'}
+          10ms<br></br>--------------{'->'}
         </Col>
         <Col className=" text-center" sm={8}>
           <Table
@@ -135,7 +127,7 @@ const SearchForm = () => {
             hover
             size="sm"
             variant="dark"
-            style={{ fontSize: '0.9vw' }}
+            style={{ fontSize: '0.8vw' }}
           >
             <thead>
               <tr>
@@ -156,12 +148,12 @@ const SearchForm = () => {
           </Table>
         </Col>
         <Col className="border-left border-light text-center" sm={2}>
-          10ms<br></br>------------{'->'}
+          10ms<br></br>--------------{'->'}
         </Col>
       </Row>
-      <Row className="w-100" style={{ fontSize: '1vw' }}>
+      <Row className="w-100" style={{ fontSize: '0.8vw' }}>
         <Col className="border-right border-light text-center" sm={2}>
-          {'<-'}------------
+          {'<-'}--------------
           <br></br>10ms
         </Col>
         <Col className="text-center" sm={8}>
@@ -171,7 +163,7 @@ const SearchForm = () => {
             hover
             size="sm"
             variant="dark"
-            style={{ fontSize: '0.9vw' }}
+            style={{ fontSize: '0.8vw' }}
           >
             <thead>
               <tr>
@@ -192,7 +184,7 @@ const SearchForm = () => {
           </Table>
         </Col>
         <Col className="border-left border-light text-center" sm={2}>
-          {'<-'}------------
+          {'<-'}--------------
           <br></br>10ms
         </Col>
       </Row>

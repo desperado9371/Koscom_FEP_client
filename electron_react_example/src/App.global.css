@@ -11,10 +11,8 @@
     /* iOS 4.1- */
 }
 
-;
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~tabler-react/dist/Tabler.css';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 body {
     position: relative;
     color: black;
@@ -151,4 +149,8 @@ a:hover {
 
 .miniChart {
     width: 90%;
+}
+
+.redrow {
+    background-color: red;
 }

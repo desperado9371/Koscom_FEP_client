@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import dgram from 'dgram';
 import { Button, Form } from 'react-bootstrap';
-import PropTableTest from './PropTableTest';
+import PropTableTest from '../Components/Tables/PropTableTest';
 import { constants } from 'buffer';
 import net from 'net';
 
 const UdpTest = () => {
-  const [msg, SetMsg] = useState('{ "id":0, "age":0, "money":0 }');
+  const [msg, SetMsg] = useState('{ "idx":0, "procNo":0, "money":0 }');
   const [isUdpConnected, SetIsUdpConnected] = useState(false);
   const [response, SetResonse] = useState('');
 

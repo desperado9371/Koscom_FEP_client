@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useTable } from 'react-table';
 
-import makeData from './makeData';
+import makeData from '../../makeData';
 
 const Styles = styled.div`
   padding: 1rem;

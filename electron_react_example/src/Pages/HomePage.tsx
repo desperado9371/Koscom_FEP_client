@@ -24,8 +24,8 @@ import {
 import C3Chart from 'react-c3js';
 
 import SiteWrapper from './SiteWrapper.react';
-import Test2 from './Test2';
-import Table_example from './Table_example';
+import Test2 from '../Test2';
+import Table_example from '../Components/Tables/Table_example';
 
 function Home() {
   return (

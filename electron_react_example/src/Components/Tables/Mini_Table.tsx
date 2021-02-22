@@ -6,65 +6,64 @@ const Mini_Table = () => {
     <Table
       striped
       bordered
+      responsive
       hover
       size="sm"
       variant="dark"
-      style={{ fontSize: '0.8vw' }}
+      style={{ fontSize: '0.6vw', width: '100%' }}
     >
       <thead>
         <tr>
-          <th>No</th>
-          <th>P</th>
-          <th>C</th>
-          <th>N</th>
-          <th>Li</th>
-          <th>T</th>
-          <th>F</th>
-          <th>IntCnt</th>
-          <th>SsndCnt</th>
-          <th>SWrtcnt</th>
-          <th>Time</th>
+          <th style={{ fontSize: '0.6vw' }}>No</th>
+          <th style={{ fontSize: '0.6vw' }}>P</th>
+          <th style={{ fontSize: '0.6vw' }}>Li</th>
+          <th style={{ fontSize: '0.6vw' }}>T</th>
+          <th style={{ fontSize: '0.6vw' }}>F</th>
+          <th style={{ fontSize: '0.6vw' }}>IntCnt</th>
+          <th style={{ fontSize: '0.6vw' }}>SsndCnt</th>
+          <th style={{ fontSize: '0.6vw' }}>SWrtcnt</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>101</td>
           <td>1</td>
-          <td>0</td>
-          <td>1</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
           <td>1</td>
-          <td>0.00312</td>
         </tr>
         <tr>
           <td>102</td>
           <td>1</td>
-          <td>0</td>
-          <td>1</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
-          <td>0.00312</td>
+        </tr>
+        <tr style={{ backgroundColor: 'red' }}>
+          <td>103</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
         </tr>
         <tr>
           <td>103</td>
           <td>1</td>
-          <td>0</td>
-          <td>1</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
           <td>1</td>
           <td>0</td>
           <td>1</td>
-          <td>0.00312</td>
         </tr>
       </tbody>
     </Table>

@@ -41,6 +41,12 @@ const navBarItems: Array<navItem> = [
     useExact: true,
   },
   {
+    value: '통합 모니터링(현물)',
+    to: '/monitoring_ndstk',
+    LinkComponent: withRouter(NavLink),
+    useExact: true,
+  },
+  {
     value: '(임시) TCP/UDP 통신 테스트',
     to: '/udptest',
     LinkComponent: withRouter(NavLink),

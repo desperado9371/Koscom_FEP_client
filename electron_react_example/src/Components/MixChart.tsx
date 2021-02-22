@@ -24,6 +24,7 @@ const data = {
     {
       type: 'line',
       label: '주문 건수',
+      yAxisID: 'A',
       borderColor: '#58FFDD',
       borderWidth: 3,
       fill: false,
@@ -46,23 +47,24 @@ const data = {
     },
     {
       type: 'bar',
-      label: '평균 처리',
+      label: '평균 처리 시간',
+      yAxisID: 'B',
       backgroundColor: '#7446E8',
       data: [
-        rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand() * rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand(),
-        rand() + rand(),
-        rand() * rand(),
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
+        rand() / 1000,
       ],
       borderColor: '#7446E8',
       borderWidth: 2,
@@ -71,6 +73,9 @@ const data = {
 };
 
 const options = {
+  responsive: true,
+  maintainAspectRatio: true,
+  aspectRatio: 4,
   legend: {
     labels: {
       fontColor: '#eeeeee',
@@ -79,6 +84,8 @@ const options = {
   scales: {
     yAxes: [
       {
+        id: 'A',
+        position: 'left',
         ticks: {
           fontColor: '#eeeeee',
         },
@@ -86,6 +93,14 @@ const options = {
         gridLines: {
           color: 'grey',
         },
+      },
+      {
+        id: 'B',
+        position: 'right',
+        ticks: {
+          fontColor: '#eeeeee',
+        },
+        color: 'grey',
       },
     ],
     xAxes: [
@@ -99,9 +114,9 @@ const options = {
 };
 const MixChart = () => {
   return (
-    <>
+    <div>
       <Bar data={data} options={options} />
-    </>
+    </div>
   );
 };
 

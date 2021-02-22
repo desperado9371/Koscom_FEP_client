@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col, Button, ProgressBar, Card } from 'react-bootstrap';
-import Mini_Table from './Mini_Table';
-import MixChart from './MixChart';
-import SearchForm from './SearchForm';
-import Table_example from './Table_example';
-import Timer from './Timer';
+import Mini_Table from '../Components/Tables/Mini_Table';
+import MixChart from '../Components/MixChart';
+import SearchForm from '../Components/SearchForm';
+import Table_example from '../Components/Table_example';
+import Timer from '../Components/Timer';
 
 const Monitoring = () => {
   return (

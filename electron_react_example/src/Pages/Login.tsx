@@ -1,22 +1,25 @@
-import { finalHandler } from 'custom-electron-titlebar/lib/common/dom';
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Row, Col, Modal, Card, Image } from 'react-bootstrap';
 import { AnimateOnChange, animations, easings } from 'react-animation';
-import raw from '../user2.json';
+import raw from '../../assets/user2.json';
 import fs from 'fs';
+import { check } from 'prettier';
 
-const style = {
-  animation: animations.popIn,
-};
 const Login = () => {
   const [showModal, setShow] = useState(false);
-  const [showSignup, setShowSignup] = useState(false);
+  // const [showSignup, setShowSignup] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleCloseSignup = () => setShowSignup(false);
-  const handleShowSignup = () => setShowSignup(true);
+  // const handleCloseSignup = () => setShowSignup(false);
+  // const handleShowSignup = () => setShowSignup(true);
+
+  const pressEnter = (event) => {
+    if (event.key === 'Enter') {
+      checkID();
+    }
+  };
 
   const checkID = () => {
     const id = document.getElementById('formBasicLogin').value;
@@ -41,26 +44,27 @@ const Login = () => {
     handleShowSignup();
   };
 
-  const addMember = () => {
-    let id = '';
-    let pw1 = '';
-    let pw2 = '';
-    try {
-      id = document.getElementById('signUpId').value;
-      pw1 = document.getElementById('signUpPw1').value;
-      pw2 = document.getElementById('signUpPw2').value;
-    } catch {
-      handleCloseSignup();
-    }
+  // const addMember = () => {
+  //   let id = '';
+  //   let pw1 = '';
+  //   let pw2 = '';
+  //   try {
+  //     id = document.getElementById('signUpId').value;
+  //     pw1 = document.getElementById('signUpPw1').value;
+  //     pw2 = document.getElementById('signUpPw2').value;
+  //   } catch {
+  //     handleCloseSignup();
+  //   }
 
-    if (pw1 == pw2) {
-      const newMember = [...raw, { id: id, password: pw1 }];
-      console.log(newMember);
-      fs.writeFileSync('./user2.json', JSON.stringify(newMember));
-    } else {
-      console.log('pw incorrect');
-    }
-  };
+  //   if (pw1 == pw2) {
+  //     const newMember = [...raw, { id: id, password: pw1 }];
+  //     console.log(newMember);
+  //     fs.writeFileSync('./assets/user2.json', JSON.stringify(newMember));
+  //   } else {
+  //     console.log('pw incorrect');
+  //   }
+  // };
+
   const [textIndex, setTextIndex] = useState(0);
 
   const textArr = ['FAST!!', 'AMAZING!!', 'PERFECT!!', 'RELIABLE!!'];
@@ -138,24 +142,23 @@ const Login = () => {
                   <Form.Control
                     type="password"
                     placeholder="Password를 입력해주세요"
+                    onKeyPress={pressEnter}
                   />
                 </Form.Group>
                 <Button
                   style={{ width: '100%' }}
                   variant="primary"
-                  type="submit"
                   onClick={checkID}
                 >
                   로그인
                 </Button>
-                <Button
+                {/* <Button
                   style={{ width: '100%', marginTop: '1vw' }}
                   variant="dark"
-                  type="submit"
                   onClick={signUp}
                 >
                   회원가입
-                </Button>
+                </Button> */}
               </Form>
             </Card.Body>
           </Card>
@@ -181,7 +184,7 @@ const Login = () => {
         </Modal.Footer>
       </Modal>
 
-      <Modal
+      {/* <Modal
         style={{ marginTop: '18vw' }}
         show={showSignup}
         onHide={handleCloseSignup}
@@ -213,7 +216,6 @@ const Login = () => {
             <Button
               style={{ width: '100%' }}
               variant="primary"
-              type="submit"
               onClick={addMember}
             >
               회원가입
@@ -225,7 +227,7 @@ const Login = () => {
             닫기
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

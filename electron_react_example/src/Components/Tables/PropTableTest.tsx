@@ -3,22 +3,24 @@ import { Table } from 'react-bootstrap';
 
 const PropTableTest = (props) => {
   let data;
-  let id;
-  let age;
+  let idx;
+  let procNo;
   let money;
 
   try {
     data = JSON.parse(props.msg);
 
-    id = data['id'];
-    age = data['age'];
+    idx = data['idx'];
+    procNo = data['procNo'];
     money = data['money'];
   } catch {
     console.log('why');
-    id = 0;
-    age = 0;
+    idx = 0;
+    procNo = 0;
     money = 0;
   }
+
+  let testdata = 1;
 
   return (
     <Table
@@ -31,16 +33,16 @@ const PropTableTest = (props) => {
     >
       <thead>
         <tr>
-          <th>id</th>
-          <th>age</th>
+          <th>idx</th>
+          <th>procNo</th>
           <th>money</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>{id}</td>
-          <td>{age}</td>
-          <td>{money}</td>
+        <tr className="redrow">
+          <td className={testdata == 1 ? 'redrow' : 'noraml'}>{idx}</td>
+          <td className={testdata == 1 ? 'redrow' : 'noraml'}>{procNo}</td>
+          <td className={testdata == 1 ? 'redrow' : 'noraml'}>{money}</td>
         </tr>
       </tbody>
     </Table>
