@@ -6,15 +6,30 @@ import { constants } from 'buffer';
 import net from 'net';
 
 const UdpTest = () => {
-  const [msg, SetMsg] = useState('{ "idx":0, "procNo":0, "money":0 }');
+  const [msg, SetMsg] = useState('');
   const [isUdpConnected, SetIsUdpConnected] = useState(false);
   const [response, SetResonse] = useState('');
 
+  const [proc1, setProc1] = useState('{ "idx":0, "procNo":0, "money":0 }');
+  const [proc2, setProc2] = useState('{ "idx":1, "procNo":1, "money":11 }');
+  const [proc3, setProc3] = useState('{ "idx":2, "procNo":2, "money":22 }');
+  const [proc4, setProc4] = useState('{ "idx":3, "procNo":3, "money":33 }');
+
   var s = dgram.createSocket('udp4');
-  s.on('message', function (msg, rinfo) {
-    message = msg.toString();
-    SetMsg(message);
-    console.log('I got this message: ' + msg.toString());
+  s.on('message', function (message, rinfo) {
+    let str_message = message.toString();
+    let json_message = JSON.parse(str_message);
+    if (json_message['idx'] == 0) {
+      setProc1(str_message);
+    } else if (json_message['idx'] == 1) {
+      setProc2(str_message);
+    } else if (json_message['idx'] == 2) {
+      setProc3(str_message);
+    } else if (json_message['idx'] == 3) {
+      setProc4(str_message);
+    }
+
+    console.log('idx: ' + json_message['idx']);
   });
   s.on('error', (err) => {
     console.log(err);
@@ -73,7 +88,9 @@ const UdpTest = () => {
         {'<'}
       </Button>
       <h1>UDP LISTEN Test</h1>
-      <h3>Message: {msg}</h3>
+      <h3>
+        Message: {proc1},{proc2},{proc3},{proc4}
+      </h3>
       <Form.Group>
         <Form.Label>ip주소</Form.Label>
         <Form.Control
@@ -96,7 +113,7 @@ const UdpTest = () => {
       <Button variant="danger" onClick={closeUDP}>
         연결해제
       </Button>
-      <PropTableTest msg={msg} />
+      <PropTableTest proc1={proc1} proc2={proc2} proc3={proc3} proc4={proc4} />
       <br />
       <hr />
       <h1>TCP connection Test</h1>

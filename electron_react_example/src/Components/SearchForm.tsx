@@ -7,7 +7,7 @@ const SearchForm = () => {
   const today = moment();
   return (
     <Form style={{ paddingRight: '1vw' }}>
-      <Form.Group controlId="ctrl1">
+      <Form.Group>
         <Row style={{ paddingRight: '1vw' }}>
           <Col className="align-self-center h-100" sm={3}>
             <Form.Control

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-const ClientOrderTable = () => {
+const ClientOrderTable = (props) => {
+  let data401 = JSON.parse(props.proc401);
+  let data411 = JSON.parse(props.proc411);
+  let data421 = JSON.parse(props.proc421);
+  let data431 = JSON.parse(props.proc431);
   return (
     <Table
       striped
@@ -25,35 +29,35 @@ const ClientOrderTable = () => {
       <tbody>
         <tr>
           <td>401</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>10000</td>
-          <td>0</td>
+          <td>{data401['procStatus']}</td>
+          <td>{data401['netStatus']}</td>
+          <td>?</td>
+          <td>?</td>
+          <td>{data401['interfaceCnt']}</td>
         </tr>
         <tr>
           <td>411</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>10000</td>
-          <td>1</td>
+          <td>{data411['procStatus']}</td>
+          <td>{data411['netStatus']}</td>
+          <td>?</td>
+          <td>?</td>
+          <td>{data411['interfaceCnt']}</td>
         </tr>
-        <tr style={{ backgroundColor: 'red' }}>
+        <tr>
           <td>421</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>10000</td>
-          <td>1</td>
+          <td>{data421['procStatus']}</td>
+          <td>{data421['netStatus']}</td>
+          <td>?</td>
+          <td>?</td>
+          <td>{data421['interfaceCnt']}</td>
         </tr>
         <tr>
           <td>431</td>
-          <td>1</td>
-          <td>1</td>
-          <td>0</td>
-          <td>10000</td>
-          <td>1</td>
+          <td>{data431['procStatus']}</td>
+          <td>{data431['netStatus']}</td>
+          <td>?</td>
+          <td>?</td>
+          <td>{data431['interfaceCnt']}</td>
         </tr>
       </tbody>
     </Table>
