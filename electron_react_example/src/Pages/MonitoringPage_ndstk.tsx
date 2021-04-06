@@ -52,127 +52,148 @@ const Monitoring_ndstk = () => {
 
   // 업무계송신 - LedgerDefinitionTable을 위한 state 정의
   const [proc101, setProc101] = useState(
-    '{ "procNo":101, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 101, "procNo": 101, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 101, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc102, setProc102] = useState(
-    '{ "procNo":102, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 102, "procNo": 102, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 102, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc103, setProc103] = useState(
-    '{ "procNo":103, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 103, "procNo": 103, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 103, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc104, setProc104] = useState(
-    '{ "procNo":104, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 104, "procNo": 104, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 104, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc105, setProc105] = useState(
-    '{ "procNo":105, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 105, "procNo": 105, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 105, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc106, setProc106] = useState(
-    '{ "procNo":106, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 106, "procNo": 106, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 106, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc107, setProc107] = useState(
-    '{ "procNo":107, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 107, "procNo": 107, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 107, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc108, setProc108] = useState(
-    '{ "procNo":108, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 108, "procNo": 108, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 108, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 고객주문 - ClientOrderTable을 위한 state 정의
   const [proc401, setProc401] = useState(
-    '{ "procNo":401, "procStatus":0, "netStatus":0, "OrdNo":0, "MAX":0, "interfaceCnt":0 }'
+    '{ "market": "STK", "idx": 401, "procNo": 401, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "LCP": { "procNo": 401, "interfaceCnt": 0, "leadTime": 0 }}'
   );
   const [proc411, setProc411] = useState(
-    '{ "procNo":411, "procStatus":0, "netStatus":0, "OrdNo":0, "MAX":0, "interfaceCnt":0 }'
+    '{ "market": "STK", "idx": 411, "procNo": 411, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "LCP": { "procNo": 411, "interfaceCnt": 0, "leadTime": 0 }}'
   );
   const [proc421, setProc421] = useState(
-    '{ "procNo":421, "procStatus":0, "netStatus":0, "OrdNo":0, "MAX":0, "interfaceCnt":0 }'
+    '{ "market": "STK", "idx": 421, "procNo": 421, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "LCP": { "procNo": 421, "interfaceCnt": 0, "leadTime": 0 }}'
   );
   const [proc431, setProc431] = useState(
-    '{ "procNo":431, "procStatus":0, "netStatus":0, "OrdNo":0, "MAX":0, "interfaceCnt":0 }'
+    '{ "market": "STK", "idx": 431, "procNo": 431, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "LCP": { "procNo": 431, "interfaceCnt": 0, "leadTime": 0 }}'
   );
 
   // 고객체결 - ClientExecutionTable을 위한 state 정의
   const [proc405, setProc405] = useState(
-    '{ "procNo":405, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 405, "procNo": 405, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 405, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc415, setProc415] = useState(
-    '{ "procNo":415, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 415, "procNo": 415, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 415, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc425, setProc425] = useState(
-    '{ "procNo":425, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 425, "procNo": 425, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 425, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc435, setProc435] = useState(
-    '{ "procNo":435, "procStatus":0, "netStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 435, "procNo": 435, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 435, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 거래소 주문 - KrxOrderTable을 위한 state 정의
   const [proc61, setProc61] = useState(
-    '{ "procNo":61, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 61, "procNo": 61, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 61, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
-  const [proc62, setProc63] = useState(
-    '{ "procNo":62, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+  const [proc62, setProc62] = useState(
+    '{ "market": "STK", "idx": 62, "procNo": 62, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 62, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
-  const [proc63, setProc64] = useState(
-    '{ "procNo":63, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+  const [proc63, setProc63] = useState(
+    '{ "market": "STK", "idx": 63, "procNo": 63, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 63, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
-  const [proc64, setProc62] = useState(
-    '{ "procNo":64, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+  const [proc64, setProc64] = useState(
+    '{ "market": "STK", "idx": 64, "procNo": 64, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 64, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 거래소 체결 - KrxExecutionTable을 위한 state 정의
   const [proc81, setProc81] = useState(
-    '{ "procNo":81, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 81, "procNo": 81, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 81, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0,"smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc82, setProc82] = useState(
-    '{ "procNo":82, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 82, "procNo": 82, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 82, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0,"smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc83, setProc83] = useState(
-    '{ "procNo":83, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 83, "procNo": 83, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 83, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0,"smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc84, setProc84] = useState(
-    '{ "procNo":84, "procStatus":0, "netStatus":0, "lineStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 84, "procNo": 84, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 84, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0,"smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 주문 분배 - OrderDistruibutionTable을 위한 state 정의
   const [proc301, setProc301] = useState(
-    '{ "procNo":301, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 302, "procNo": 302, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 302, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc302, setProc302] = useState(
-    '{ "procNo":302, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 302, "procNo": 302, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 302, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc303, setProc303] = useState(
-    '{ "procNo":303, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 302, "procNo": 302, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 302, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc304, setProc304] = useState(
-    '{ "procNo":304, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 302, "procNo": 302, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 302, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt":0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 체결 분배 - ExecutionDistributionTable을 위한 state 정의
   const [proc307, setProc307] = useState(
-    '{ "procNo":307, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 307, "procNo": 307, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 307, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc308, setProc308] = useState(
-    '{ "procNo":308, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 308, "procNo": 308, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 308, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
 
   // 고객 체결 처리 - ClientExecutionProcess를 위한 state 정의
   const [proc441, setProc441] = useState(
-    '{ "procNo":441, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 441, "procNo": 441, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 441, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc442, setProc442] = useState(
-    '{ "procNo":442, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 442, "procNo": 442, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 442, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc443, setProc443] = useState(
-    '{ "procNo":443, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 443, "procNo": 443, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 443, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
   const [proc444, setProc444] = useState(
-    '{ "procNo":444, "procStatus":0, "toWrite":0, "fromRead":0, "interfaceCnt":0, "storeSndCnt":0, "storeWrtCnt":0, "smSndCnt":0, "smWrtCnt":0 }'
+    '{ "market": "STK", "idx": 444, "procNo": 444, "interfaceCnt": 0, "SmWrtCnt": 0, "SmSndCnt": 0, "StoreWrtCnt": 0, "StoreSndCnt": 0, "procStatus": 0, "connStatus": 0, "netStatus": 0, "lineStatus": 0, "logFlag": 0, "procGamsiFlag": 0, "encryptFlag": 0, "MCP": { "procNo": 444, "toWrite": 0, "fromRead": 0, "interfaceCnt": 0, "storeWrtCnt": 0, "storeSndCnt": 0, "smWrtCnt": 0, "smSndCnt": 0, "leadTime": 0 } }'
   );
+
+  const [CPUUsage, setCPUUsage] = useState(0);
+  const [MemTotal, setMemTotal] = useState(0);
+  const [MemFree, setMemFree] = useState(0);
+  const [Shmem, setShmem] = useState(0);
+
 
   var s = dgram.createSocket('udp4');
 
   s.on('message', function (message, rinfo) {
     let str_message = message.toString();
     let json_message = JSON.parse(str_message);
+
+    if( json_message.hasOwnProperty('CPUUsage'))
+    {
+      console.log( json_message['CPUUsage']);
+      setCPUUsage( parseFloat(json_message['CPUUsage']) );
+
+      setMemTotal( parseInt( json_message['MemTotal']));
+
+      setMemFree( parseInt( json_message['MemFree']));
+
+      setShmem( parseInt( json_message['Shmem']));
+    }
+
+    if( json_message['market'] == 'STK')
+    {
     switch (json_message['procNo']) {
       //ledgerDefinition
       case 101:
@@ -292,6 +313,7 @@ const Monitoring_ndstk = () => {
         setProc444(str_message);
         break;
     }
+  }
     // console.log('procNo: ' + json_message['procNo']);
     // console.log(json_message);
   });
@@ -341,7 +363,7 @@ const Monitoring_ndstk = () => {
               CPU
             </Col>
             <Col xs={10}>
-              <ProgressBar
+            <ProgressBar
                 style={{
                   height: '1.5vw',
                   fontSize: '1vw',
@@ -353,16 +375,16 @@ const Monitoring_ndstk = () => {
                 <ProgressBar
                   animated
                   variant={
-                    resources[0] > 80
+                    CPUUsage > 80
                       ? 'danger'
-                      : resources[0] > 60
+                      : CPUUsage > 60
                       ? 'warning'
                       : 'success'
                   }
-                  now={resources[0]}
-                  label={resources[0].toFixed(2) + '%'}
+                  now={CPUUsage}
+                  label={CPUUsage.toFixed(2) + '%'}
                 />
-                <ProgressBar variant="secondary" now={100 - resources[0]} />
+                <ProgressBar variant="secondary" now={100 - CPUUsage} />
               </ProgressBar>
             </Col>
           </Row>
@@ -383,16 +405,16 @@ const Monitoring_ndstk = () => {
                 <ProgressBar
                   animated
                   variant={
-                    resources[1] > 80
+                    ( (MemTotal-MemFree) / MemTotal * 100 )> 80
                       ? 'danger'
-                      : resources[1] > 60
+                      : ( (MemTotal-MemFree) / MemTotal * 100 ) > 60
                       ? 'warning'
                       : 'success'
                   }
-                  now={resources[1]}
-                  label={resources[1].toFixed(2) + '%'}
+                  now={( (MemTotal-MemFree) / MemTotal * 100 )}
+                  label={( (MemTotal-MemFree) / MemTotal * 100 ).toFixed(2) + '%'+'  <Shmem: '+Shmem+'Mb>'}
                 />
-                <ProgressBar variant="secondary" now={100 - resources[1]} />
+                <ProgressBar variant="secondary" now={100 - ( (MemTotal-MemFree) / MemTotal * 100 )} />
               </ProgressBar>
             </Col>
           </Row>

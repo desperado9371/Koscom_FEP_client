@@ -33,46 +33,46 @@ const OrderDistributionTable = (props) => {
         <tr>
           <td>301</td>
           <td>{data301['procStatus']}</td>
-          <td>{data301['toWrite']}</td>
-          <td>{data301['fromRead']}</td>
-          <td>{data301['interfaceCnt']}</td>
-          <td>{data301['storeSndCnt']}</td>
-          <td>{data301['storeWrtCnt']}</td>
-          <td>{data301['smSndCnt']}</td>
-          <td>{data301['smWrtCnt']}</td>
+          <td>{data301['MCP']['toWrite']}</td>
+          <td>{data301['MCP']['fromRead']}</td>
+          <td>{data301['MCP']['interfaceCnt']}</td>
+          <td>{data301['MCP']['storeSndCnt']}</td>
+          <td>{data301['MCP']['storeWrtCnt']}</td>
+          <td>{data301['MCP']['smSndCnt']}</td>
+          <td>{data301['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>302</td>
           <td>{data302['procStatus']}</td>
-          <td>{data302['toWrite']}</td>
-          <td>{data302['fromRead']}</td>
-          <td>{data302['interfaceCnt']}</td>
-          <td>{data302['storeSndCnt']}</td>
-          <td>{data302['storeWrtCnt']}</td>
-          <td>{data302['smSndCnt']}</td>
-          <td>{data302['smWrtCnt']}</td>
+          <td>{data302['MCP']['toWrite']}</td>
+          <td>{data302['MCP']['fromRead']}</td>
+          <td>{data302['MCP']['interfaceCnt']}</td>
+          <td>{data302['MCP']['storeSndCnt']}</td>
+          <td>{data302['MCP']['storeWrtCnt']}</td>
+          <td>{data302['MCP']['smSndCnt']}</td>
+          <td>{data302['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>303</td>
           <td>{data303['procStatus']}</td>
-          <td>{data303['toWrite']}</td>
-          <td>{data303['fromRead']}</td>
-          <td>{data303['interfaceCnt']}</td>
-          <td>{data303['storeSndCnt']}</td>
-          <td>{data303['storeWrtCnt']}</td>
-          <td>{data303['smSndCnt']}</td>
-          <td>{data303['smWrtCnt']}</td>
+          <td>{data303['MCP']['toWrite']}</td>
+          <td>{data303['MCP']['fromRead']}</td>
+          <td>{data303['MCP']['interfaceCnt']}</td>
+          <td>{data303['MCP']['storeSndCnt']}</td>
+          <td>{data303['MCP']['storeWrtCnt']}</td>
+          <td>{data303['MCP']['smSndCnt']}</td>
+          <td>{data303['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>304</td>
           <td>{data304['procStatus']}</td>
-          <td>{data304['toWrite']}</td>
-          <td>{data304['fromRead']}</td>
-          <td>{data304['interfaceCnt']}</td>
-          <td>{data304['storeSndCnt']}</td>
-          <td>{data304['storeWrtCnt']}</td>
-          <td>{data304['smSndCnt']}</td>
-          <td>{data304['smWrtCnt']}</td>
+          <td>{data304['MCP']['toWrite']}</td>
+          <td>{data304['MCP']['fromRead']}</td>
+          <td>{data304['MCP']['interfaceCnt']}</td>
+          <td>{data304['MCP']['storeSndCnt']}</td>
+          <td>{data304['MCP']['storeWrtCnt']}</td>
+          <td>{data304['MCP']['smSndCnt']}</td>
+          <td>{data304['MCP']['smWrtCnt']}</td>
         </tr>
       </tbody>
     </Table>

@@ -38,52 +38,52 @@ const KrxOrderTable = (props) => {
           <td>{data61['procStatus']}</td>
           <td>{data61['netStatus']}</td>
           <td>{data61['lineStatus']}</td>
-          <td>{data61['toWrite']}</td>
-          <td>{data61['fromRead']}</td>
-          <td>{data61['interfaceCnt']}</td>
-          <td>{data61['storeSndCnt']}</td>
-          <td>{data61['storeWrtCnt']}</td>
-          <td>{data61['smSndCnt']}</td>
-          <td>{data61['smWrtCnt']}</td>
+          <td>{data61['MCP']['toWrite']}</td>
+          <td>{data61['MCP']['fromRead']}</td>
+          <td>{data61['MCP']['interfaceCnt']}</td>
+          <td>{data61['MCP']['storeSndCnt']}</td>
+          <td>{data61['MCP']['storeWrtCnt']}</td>
+          <td>{data61['MCP']['smSndCnt']}</td>
+          <td>{data61['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>62</td>
           <td>{data62['procStatus']}</td>
           <td>{data62['netStatus']}</td>
           <td>{data62['lineStatus']}</td>
-          <td>{data62['toWrite']}</td>
-          <td>{data62['fromRead']}</td>
-          <td>{data62['interfaceCnt']}</td>
-          <td>{data62['storeSndCnt']}</td>
-          <td>{data62['storeWrtCnt']}</td>
-          <td>{data62['smSndCnt']}</td>
-          <td>{data62['smWrtCnt']}</td>
+          <td>{data62['MCP']['toWrite']}</td>
+          <td>{data62['MCP']['fromRead']}</td>
+          <td>{data62['MCP']['interfaceCnt']}</td>
+          <td>{data62['MCP']['storeSndCnt']}</td>
+          <td>{data62['MCP']['storeWrtCnt']}</td>
+          <td>{data62['MCP']['smSndCnt']}</td>
+          <td>{data62['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>63</td>
           <td>{data63['procStatus']}</td>
           <td>{data63['netStatus']}</td>
           <td>{data63['lineStatus']}</td>
-          <td>{data63['toWrite']}</td>
-          <td>{data63['fromRead']}</td>
-          <td>{data63['interfaceCnt']}</td>
-          <td>{data63['storeSndCnt']}</td>
-          <td>{data63['storeWrtCnt']}</td>
-          <td>{data63['smSndCnt']}</td>
-          <td>{data63['smWrtCnt']}</td>
+          <td>{data63['MCP']['toWrite']}</td>
+          <td>{data63['MCP']['fromRead']}</td>
+          <td>{data63['MCP']['interfaceCnt']}</td>
+          <td>{data63['MCP']['storeSndCnt']}</td>
+          <td>{data63['MCP']['storeWrtCnt']}</td>
+          <td>{data63['MCP']['smSndCnt']}</td>
+          <td>{data63['MCP']['smWrtCnt']}</td>
         </tr>
         <tr>
           <td>64</td>
           <td>{data64['procStatus']}</td>
           <td>{data64['netStatus']}</td>
           <td>{data64['lineStatus']}</td>
-          <td>{data64['toWrite']}</td>
-          <td>{data64['fromRead']}</td>
-          <td>{data64['interfaceCnt']}</td>
-          <td>{data64['storeSndCnt']}</td>
-          <td>{data64['storeWrtCnt']}</td>
-          <td>{data64['smSndCnt']}</td>
-          <td>{data64['smWrtCnt']}</td>
+          <td>{data64['MCP']['toWrite']}</td>
+          <td>{data64['MCP']['fromRead']}</td>
+          <td>{data64['MCP']['interfaceCnt']}</td>
+          <td>{data64['MCP']['storeSndCnt']}</td>
+          <td>{data64['MCP']['storeWrtCnt']}</td>
+          <td>{data64['MCP']['smSndCnt']}</td>
+          <td>{data64['MCP']['smWrtCnt']}</td>
         </tr>
       </tbody>
     </Table>

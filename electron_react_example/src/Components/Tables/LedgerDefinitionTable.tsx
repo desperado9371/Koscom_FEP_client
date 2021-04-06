@@ -44,13 +44,13 @@ const LedgerDefinitionTable = (props) => {
           <td>101</td>
           <td>{data101['procStatus']}</td>
           <td>{data101['netStatus']}</td>
-          <td>{data101['toWrite']}</td>
-          <td>{data101['fromRead']}</td>
-          <td>{data101['interfaceCnt']}</td>
-          <td>{data101['storeSndCnt']}</td>
-          <td>{data101['storeWrtCnt']}</td>
-          <td>{data101['smSndCnt']}</td>
-          <td>{data101['smWrtCnt']}</td>
+          <td>{data101['MCP']['toWrite']}</td>
+          <td>{data101['MCP']['fromRead']}</td>
+          <td>{data101['MCP']['interfaceCnt']}</td>
+          <td>{data101['MCP']['storeSndCnt']}</td>
+          <td>{data101['MCP']['storeWrtCnt']}</td>
+          <td>{data101['MCP']['smSndCnt']}</td>
+          <td>{data101['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -60,13 +60,13 @@ const LedgerDefinitionTable = (props) => {
           <td>102</td>
           <td>{data102['procStatus']}</td>
           <td>{data102['netStatus']}</td>
-          <td>{data102['toWrite']}</td>
-          <td>{data102['fromRead']}</td>
-          <td>{data102['interfaceCnt']}</td>
-          <td>{data102['storeSndCnt']}</td>
-          <td>{data102['storeWrtCnt']}</td>
-          <td>{data102['smSndCnt']}</td>
-          <td>{data102['smWrtCnt']}</td>
+          <td>{data102['MCP']['toWrite']}</td>
+          <td>{data102['MCP']['fromRead']}</td>
+          <td>{data102['MCP']['interfaceCnt']}</td>
+          <td>{data102['MCP']['storeSndCnt']}</td>
+          <td>{data102['MCP']['storeWrtCnt']}</td>
+          <td>{data102['MCP']['smSndCnt']}</td>
+          <td>{data102['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -76,13 +76,13 @@ const LedgerDefinitionTable = (props) => {
           <td>103</td>
           <td>{data103['procStatus']}</td>
           <td>{data103['netStatus']}</td>
-          <td>{data103['toWrite']}</td>
-          <td>{data103['fromRead']}</td>
-          <td>{data103['interfaceCnt']}</td>
-          <td>{data103['storeSndCnt']}</td>
-          <td>{data103['storeWrtCnt']}</td>
-          <td>{data103['smSndCnt']}</td>
-          <td>{data103['smWrtCnt']}</td>
+          <td>{data103['MCP']['toWrite']}</td>
+          <td>{data103['MCP']['fromRead']}</td>
+          <td>{data103['MCP']['interfaceCnt']}</td>
+          <td>{data103['MCP']['storeSndCnt']}</td>
+          <td>{data103['MCP']['storeWrtCnt']}</td>
+          <td>{data103['MCP']['smSndCnt']}</td>
+          <td>{data103['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -92,13 +92,13 @@ const LedgerDefinitionTable = (props) => {
           <td>104</td>
           <td>{data104['procStatus']}</td>
           <td>{data104['netStatus']}</td>
-          <td>{data104['toWrite']}</td>
-          <td>{data104['fromRead']}</td>
-          <td>{data104['interfaceCnt']}</td>
-          <td>{data104['storeSndCnt']}</td>
-          <td>{data104['storeWrtCnt']}</td>
-          <td>{data104['smSndCnt']}</td>
-          <td>{data104['smWrtCnt']}</td>
+          <td>{data104['MCP']['toWrite']}</td>
+          <td>{data104['MCP']['fromRead']}</td>
+          <td>{data104['MCP']['interfaceCnt']}</td>
+          <td>{data104['MCP']['storeSndCnt']}</td>
+          <td>{data104['MCP']['storeWrtCnt']}</td>
+          <td>{data104['MCP']['smSndCnt']}</td>
+          <td>{data104['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -108,13 +108,13 @@ const LedgerDefinitionTable = (props) => {
           <td>105</td>
           <td>{data105['procStatus']}</td>
           <td>{data105['netStatus']}</td>
-          <td>{data105['toWrite']}</td>
-          <td>{data105['fromRead']}</td>
-          <td>{data105['interfaceCnt']}</td>
-          <td>{data105['storeSndCnt']}</td>
-          <td>{data105['storeWrtCnt']}</td>
-          <td>{data105['smSndCnt']}</td>
-          <td>{data105['smWrtCnt']}</td>
+          <td>{data105['MCP']['toWrite']}</td>
+          <td>{data105['MCP']['fromRead']}</td>
+          <td>{data105['MCP']['interfaceCnt']}</td>
+          <td>{data105['MCP']['storeSndCnt']}</td>
+          <td>{data105['MCP']['storeWrtCnt']}</td>
+          <td>{data105['MCP']['smSndCnt']}</td>
+          <td>{data105['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -124,13 +124,13 @@ const LedgerDefinitionTable = (props) => {
           <td>106</td>
           <td>{data106['procStatus']}</td>
           <td>{data106['netStatus']}</td>
-          <td>{data106['toWrite']}</td>
-          <td>{data106['fromRead']}</td>
-          <td>{data106['interfaceCnt']}</td>
-          <td>{data106['storeSndCnt']}</td>
-          <td>{data106['storeWrtCnt']}</td>
-          <td>{data106['smSndCnt']}</td>
-          <td>{data106['smWrtCnt']}</td>
+          <td>{data106['MCP']['toWrite']}</td>
+          <td>{data106['MCP']['fromRead']}</td>
+          <td>{data106['MCP']['interfaceCnt']}</td>
+          <td>{data106['MCP']['storeSndCnt']}</td>
+          <td>{data106['MCP']['storeWrtCnt']}</td>
+          <td>{data106['MCP']['smSndCnt']}</td>
+          <td>{data106['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -140,13 +140,13 @@ const LedgerDefinitionTable = (props) => {
           <td>107</td>
           <td>{data107['procStatus']}</td>
           <td>{data107['netStatus']}</td>
-          <td>{data107['toWrite']}</td>
-          <td>{data107['fromRead']}</td>
-          <td>{data107['interfaceCnt']}</td>
-          <td>{data107['storeSndCnt']}</td>
-          <td>{data107['storeWrtCnt']}</td>
-          <td>{data107['smSndCnt']}</td>
-          <td>{data107['smWrtCnt']}</td>
+          <td>{data107['MCP']['toWrite']}</td>
+          <td>{data107['MCP']['fromRead']}</td>
+          <td>{data107['MCP']['interfaceCnt']}</td>
+          <td>{data107['MCP']['storeSndCnt']}</td>
+          <td>{data107['MCP']['storeWrtCnt']}</td>
+          <td>{data107['MCP']['smSndCnt']}</td>
+          <td>{data107['MCP']['smWrtCnt']}</td>
         </tr>
         <tr
           style={{
@@ -156,13 +156,13 @@ const LedgerDefinitionTable = (props) => {
           <td>108</td>
           <td>{data108['procStatus']}</td>
           <td>{data108['netStatus']}</td>
-          <td>{data108['toWrite']}</td>
-          <td>{data108['fromRead']}</td>
-          <td>{data108['interfaceCnt']}</td>
-          <td>{data108['storeSndCnt']}</td>
-          <td>{data108['storeWrtCnt']}</td>
-          <td>{data108['smSndCnt']}</td>
-          <td>{data108['smWrtCnt']}</td>
+          <td>{data108['MCP']['toWrite']}</td>
+          <td>{data108['MCP']['fromRead']}</td>
+          <td>{data108['MCP']['interfaceCnt']}</td>
+          <td>{data108['MCP']['storeSndCnt']}</td>
+          <td>{data108['MCP']['storeWrtCnt']}</td>
+          <td>{data108['MCP']['smSndCnt']}</td>
+          <td>{data108['MCP']['smWrtCnt']}</td>
         </tr>
       </tbody>
     </Table>

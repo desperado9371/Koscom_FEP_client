@@ -8,6 +8,7 @@ import Login from './Pages/Login';
 import UdpTest from './Pages/UdpTest';
 import Monitoring_ndfo from './Pages/MonitoringPage_ndfo';
 import Monitoring_ndstk from './Pages/MonitoringPage_ndstk';
+import ConnectInfo from './Pages/ConnectInfo';
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
         <Route exact path="/monitoring" component={Monitoring} />
         <Route exact path="/monitoring_ndstk" component={Monitoring_ndstk} />
         <Route exact path="/monitoring_ndfo" component={Monitoring_ndfo} />
-        <Route exact path="/udptest" component={UdpTest} />
+        <Route exact path="/networktest" component={UdpTest} />
+        <Route exact path="/connectInfo" component={ConnectInfo} />
       </Switch>
     </Router>
   );

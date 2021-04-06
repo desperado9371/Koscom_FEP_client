@@ -14,22 +14,9 @@ import {
 
 const navBarItems: Array<navItem> = [
   {
-    value: 'IP & Port 설정',
+    value: 'Home',
     to: '/Home',
     // icon: 'home',
-    LinkComponent: withRouter(NavLink),
-    useExact: true,
-  },
-  {
-    value: '주문처리 조회',
-    // icon: 'box',
-    to: '/search',
-    LinkComponent: withRouter(NavLink),
-    useExact: true,
-  },
-  {
-    value: '통합 모니터링',
-    to: '/monitoring',
     LinkComponent: withRouter(NavLink),
     useExact: true,
   },
@@ -40,8 +27,22 @@ const navBarItems: Array<navItem> = [
     useExact: true,
   },
   {
-    value: '(임시) TCP/UDP 통신 테스트',
-    to: '/udptest',
+    value: '통합 모니터링(선물)',
+    to: '/monitoring_ndfo',
+    LinkComponent: withRouter(NavLink),
+    useExact: true,
+  },
+  {
+    value: '서버 Ip & Port 셋팅',
+    to: '/connectInfo',
+    // icon: 'home',
+    LinkComponent: withRouter(NavLink),
+    useExact: true,
+  },
+  {
+    value: '네트워크테스트',
+    to: '/networktest',
+    // icon: 'home',
     LinkComponent: withRouter(NavLink),
     useExact: true,
   },
